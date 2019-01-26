@@ -1,0 +1,156 @@
+.animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,80px,0)
+    }
+
+    100% {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,80px,0)
+    }
+
+    100% {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    to {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+}
+
+@keyframes bounce {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    to {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+}
+
+@-webkit-keyframes progress-html {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 90%
+    }
+}
+
+@keyframes progress-html {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 90%
+    }
+}
+
+@-webkit-keyframes progress-css {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 70%
+    }
+}
+
+@keyframes progress-css {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 70%
+    }
+}
+
+@-webkit-keyframes progress-js {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 65%
+    }
+}
+
+@keyframes progress-js {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 65%
+    }
+}
+
+@keyframes progress-dotnet {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 80%
+    }
+}
+
+@-webkit-keyframes progress-dotnet {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 80%
+    }
+}
+
+
+@-webkit-keyframes progress-angular {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 40%
+    }
+}
+
+@keyframes progress-angular {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 40%
+    }
+}
