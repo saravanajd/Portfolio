@@ -2,7 +2,31 @@ var $animation_elements = $('section:not(#header)');
 var $window = $(window);
 $(document).ready(function () {
     $animation_elements = $('section:not(#header)');
-    console.log($animation_elements);
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > $('#header').height() - 50) {
+            $('#menu').addClass('bg-secondary');
+        } else {
+            $('#menu').removeClass('bg-secondary');
+        }
+    });
+
+    $('ul.menu a').on('click',function(e){
+        e.preventDefault();
+        var $section = $(this).attr('href');  
+        $('html, body').animate({
+            scrollTop: $($section).offset().top
+        },1000)
+    })
+
+    $('#btnPortfolio').on('click',function(e){
+        e.preventDefault();
+        var $section = $(this).attr('href');  
+        $('html, body').animate({
+            scrollTop: $('#portfolio').offset().top
+        },1000)
+    })
+    
 });
 console.log($animation_elements);
 
@@ -23,7 +47,6 @@ function check_if_in_view() {
             $element.addClass('animate');
         } else {
             $element.removeClass('animate');
-            console.log($element);
         }
     });
 }
