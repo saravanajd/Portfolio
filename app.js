@@ -11,22 +11,33 @@ $(document).ready(function () {
         }
     });
 
-    $('ul.menu a').on('click',function(e){
+    $('ul.menu a').on('click', function (e) {
         e.preventDefault();
-        var $section = $(this).attr('href');  
+        var $section = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $($section).offset().top
-        },1000)
+        }, 1000)
     })
 
-    $('#btnPortfolio').on('click',function(e){
+    $('#btnPortfolio').on('click', function (e) {
         e.preventDefault();
-        var $section = $(this).attr('href');  
+        var $section = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $('#portfolio').offset().top
-        },1000)
+        }, 1000)
     })
-    
+
+    $(document).on('click', 'body', function (event) {
+        if ($(event.target).closest('.top-menu').length) {
+            return;
+        }
+        console.log(event.target)
+
+        $('#chkShowMenu').prop('checked', false);
+        console.log("test");
+
+    });
+
 });
 console.log($animation_elements);
 
